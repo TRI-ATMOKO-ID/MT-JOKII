@@ -2,7 +2,7 @@
 
 function generateRandomId(length) {
   const characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   let result = "";
   for (let i = 0; i < length; i++) {
     result += characters.charAt(Math.floor(Math.random() * characters.length));
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           const message = `*Halo MT JOKII, saya ingin memesan:*\n
 *Identitas Pembeli*
-🔑 ID Pelanggan: *#${formData.random_id}*
+🔑 ID Pelanggan: *#MT-${formData.random_id}*
 📌 Nama: ${formData.nama}
 📱 No WA: ${formData.no_wa}\n
 *Detail Pesanan*
@@ -68,3 +68,4 @@ ${formData.tambahan ? `💡 Tambahan: ${formData.tambahan}` : ""}
     });
   });
 });
+
